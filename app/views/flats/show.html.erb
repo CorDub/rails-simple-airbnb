@@ -1,0 +1,26 @@
+<div class="m-2">
+<h1><%= @flat.name %></h1>
+<p><%= @flat.address %></p>
+</div>
+
+<div class="m-2">
+<h2>A touch more definition on that space that caught your eye</h2>
+<h3><%= @flat.description %></h3>
+</div>
+
+<div class="m-2">
+<h2>Stuff</h2>
+<i class="fa-solid fa-person"><%= @flat.number_of_guests %></i>
+<i class="fa-solid fa-sterling-sign"><%= @flat.price_per_night %></i>
+</div>
+
+<div class="m-2">
+<h2>We convinced you didn't we?</h2>
+<button class="btn btn-success">Give us the dough mate</button>
+</div>
+
+<div class="m-2">
+<h2>Share</h2>
+<button class="btn btn-success">Icons here in the future</button>
+</div>
+<%= link_to "THAT S  QUITE ENOUGH OF THIS FOR NOW", flats_path, class: "btn btn-warning"%>

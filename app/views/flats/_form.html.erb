@@ -1,0 +1,11 @@
+<h1>WOULD YOU HAPPEN TO HAVE A NOICE LOOKING TENEMENT YOU D BE WILLING TO MOMENTARILY TRANSFER THE OCCUPATION OF IN EXCHANGE OF MONETARY COMPENSATION MY GOOD MAN?</h2>
+<%= simple_form_for(@flat) do |f|%>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :number_of_guests %>
+  <%= f.input :price_per_night %>
+  <%= f.submit "AYE I DO MY GOOD SIR" %>
+  <%= link_to "ON SECOND THOUGHT I SHOULD THINK NOT", new_flat_path, class: "btn btn-danger" %>
+<% end %>
+<%= link_to "I VE HAD QUITE ENOUGH OF THIS ALREADY", flats_path, class: "btn btn-warning"%>

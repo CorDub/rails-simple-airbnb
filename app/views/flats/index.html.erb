@@ -1,0 +1,14 @@
+<h1>THESE ARE THE BEST GODDANG-GIVEN FLATS IN THIS HERE TOWN (<%= @flats.size %>)</h1>
+<ul>
+<% @flats.each do |flat| %>
+  <li>
+    <div>
+    <h2><%= flat.name %></h2>
+    <p><%= flat.address %></p>
+    <i class="fa-solid fa-person"><%= flat.number_of_guests %></i>
+    <i class="fa-solid fa-sterling-sign"><%= flat.price_per_night %></i>
+    <div><%= link_to "Lore info", flat_path(flat) %> | <%= link_to "Now that won't quite do it", edit_flat_path(flat) %>
+     | <%= link_to "Nah we got to get rid of this", flat_path(flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%></div>
+    </div>
+  </li>
+<% end %>
